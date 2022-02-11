@@ -1,0 +1,64 @@
+.barra-lateral{
+    position: fixed;
+    z-index: 3;
+
+    background-color: #FFFFFF;
+    width: 60vw;
+    height: 100%;
+    
+    top: 0;
+    right: 0;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 16px;
+
+    padding-left: 20px;
+}
+.fundo-barra-lateral {
+    background-color: rgba(0, 0, 0, 0.5);
+
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    z-index: 2;
+}
+
+.fundo-barra-escondido{
+    display: none;
+}
+
+.informacao{
+    font-weight: bold;
+    text-align: center;
+}
+
+.contato{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+
+    display: flex;
+    align-items: center;
+}
+.contato .contato-barra-lateral{
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.tipo-mensagem  .tipos{
+    display: flex;
+    align-items: center;
+}
+.tipo-mensagem  .tipos .info-icone{
+    margin-left: 8px;
+}
+
+.barra-escondida{
+    display: none;
+}
