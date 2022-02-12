@@ -36,27 +36,35 @@
         <ion-icon name="paper-plane-outline" class="botao-enviar" onclick="enviarMensagem()"></ion-icon>
     </footer>
 
-    <div class="fundo-barra-lateral fundo-barra-escondido" onclick="desacinarBarraLateral()">
+    <div class="fundo-barra-lateral fundo-barra-escondido">
         <div class="barra-lateral barra-escondida">
             <p class="informacao">Escolha um contato para enviar mensagem:</p>
             <div class="contatos">
                 <div class="contato">
-                    <ion-icon name="people" class="contato-barra-lateral"></ion-icon>
-                    <p class="nome-user">Todos</p>
+                    <div class="participantes" onclick="selecionarParticipante(this)">
+                        <ion-icon name="people" class="contato-barra-lateral"></ion-icon>
+                        <p class="nome-user">Todos</p>
+                    </div>
+                    <div class="caixa-contato-participantes">
+        
+                    </div>
+
                 </div>
             </div>
             <p class="informacao">Escolha a visibilidade:</p>
             <div class="tipo-mensagem">
-                <div class="tipos">
+                <div class="tipos" onclick="selecionarStatusMensagemPublico(this)">
                     <ion-icon name="lock-open"></ion-icon>
                     <p class="info-icone">Público</p>
                 </div>
-                <div class="tipos">
+                <div class="tipos" onclick="selecionarStatusMensagemPrivado(this)">
                     <ion-icon name="lock-closed"></ion-icon>
                     <p class="info-icone">Reservado</p>
                 </div>
     
             </div>
+
+        <ion-icon name="close-circle" class="fechar-barra" onclick="desacinarBarraLateral()"></ion-icon>
         </div>
     </div>
 
@@ -64,7 +72,7 @@
         <img src="./extras/logo 1.png" alt="Logo do chat UOL" class="logo-cadastro">
         <div class="cadastro-nome">
             <input type="text" class="input-nome" placeholder="Digite seu nome">
-            <button class="botao-entrar" onclick="entrarNoChat()">Entrar</button>
+            <button class="botao-entrar" onclick=" logar()">Entrar</button>
         </div>
     </div>
 

@@ -1,6 +1,6 @@
 .barra-lateral{
     position: fixed;
-    z-index: 3;
+    z-index: 4;
 
     background-color: #FFFFFF;
     width: 60vw;
@@ -42,13 +42,38 @@
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-
-    display: flex;
-    align-items: center;
+  
 }
 .contato .contato-barra-lateral{
     font-size: 20px;
     margin-right: 8px;
+}
+
+.participantes{ 
+    display: flex;
+    align-items: center;
+    
+}
+
+.caixa-contato-participantes{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+   
+}
+
+.participante-selecionado{
+    border-radius: 9px;
+    border: 3px solid;
+    border-color: #28BB25;
+
+}
+
+.status-mensagem{
+    border-radius: 9px;
+    border: 3px solid;
+    border-color: #28BB25;
 }
 
 .tipo-mensagem  .tipos{
@@ -61,4 +86,11 @@
 
 .barra-escondida{
     display: none;
+}
+
+.fechar-barra{
+    position: relative;
+    top: 38vh;
+    left: 0;
+    font-size: 50px;
 }
