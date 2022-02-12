@@ -10,6 +10,20 @@ let contatoPrivado = {
 
 let mensagemPrivada = false;
 
+document.addEventListener('keypress', function(e){
+    if(e.which == 13 && mensagemPodeSerEnviada){
+       enviarMensagem();
+       console.log("Tecla enter foi precionada");
+    }
+ }, false);
+
+function mensagemPodeSerEnviada(){
+    const valorInput = document.querySelector(".input-escreva").value;
+    if(valorInput !== null){
+        enviarMensagem();
+    }
+}
+
 function logar(){
     verificarUsuarios();
     const nome = document.querySelector('.input-nome').value;
