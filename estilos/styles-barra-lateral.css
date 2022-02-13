@@ -42,7 +42,9 @@
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-  
+
+    height: 40vh;
+    overflow-y: auto;
 }
 .contato .contato-barra-lateral{
     font-size: 20px;
@@ -90,7 +92,7 @@
 
 .fechar-barra{
     position: relative;
-    top: 38vh;
-    left: 0;
+    top: -65vh;
+    left: 54vw;
     font-size: 50px;
 }
