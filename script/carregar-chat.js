@@ -25,7 +25,7 @@ function renderizarMensagens(){
     for(let i = 0; i<mensagens.length; i++){
         if(mensagens[i].type ==="message"){
             mensagem = mensagem +`
-            <div class="mensagem mensagem-tipo-normal">
+            <div class="mensagem mensagem-tipo-normal" data-identifier="message">
                 <p class="data">(${mensagens[i].time})</p>
                 <p class="nome">${mensagens[i].from}</p>
                 <p class="para">${mensagens[i].to}:</p>
@@ -34,7 +34,7 @@ function renderizarMensagens(){
             `
         }else if(mensagens[i].type ==="status"){
             mensagem = mensagem +`
-            <div class="mensagem mensagem-tipo-entrada">
+            <div class="mensagem mensagem-tipo-entrada" data-identifier="message">
                 <p class="data">(${mensagens[i].time})</p>
                 <p class="nome">${mensagens[i].from}</p>
                 <p class="para">${mensagens[i].to}:</p>

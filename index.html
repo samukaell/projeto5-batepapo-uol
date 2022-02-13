@@ -33,10 +33,10 @@
 
     <footer>
         <input type="text" name="input-escreva" class="input-escreva" placeholder="Escreva aqui...">
-        <ion-icon name="paper-plane-outline" class="botao-enviar" onclick="enviarMensagem()"></ion-icon>
+        <ion-icon name="paper-plane-outline" class="botao-enviar" onclick="enviarMensagem()" data-identifier="send-message"></ion-icon>
     </footer>
 
-    <div class="fundo-barra-lateral fundo-barra-escondido">
+    <div class="fundo-barra-lateral fundo-barra-escondido" onclick="desacinarBarraLateral()">
         <div class="barra-lateral barra-escondida">
             <p class="informacao">Escolha um contato para enviar mensagem:</p>
             <div class="contatos">
@@ -53,11 +53,11 @@
             </div>
             <p class="informacao">Escolha a visibilidade:</p>
             <div class="tipo-mensagem">
-                <div class="tipos" onclick="selecionarStatusMensagemPublico(this)">
+                <div class="tipos" onclick="selecionarStatusMensagemPublico(this)" data-identifier="participant">
                     <ion-icon name="lock-open"></ion-icon>
                     <p class="info-icone">Público</p>
                 </div>
-                <div class="tipos" onclick="selecionarStatusMensagemPrivado(this)">
+                <div class="tipos" onclick="selecionarStatusMensagemPrivado(this)" data-identifier="participant">
                     <ion-icon name="lock-closed"></ion-icon>
                     <p class="info-icone">Reservado</p>
                 </div>
@@ -71,8 +71,8 @@
     <div class="tela-cadastro ">
         <img src="./extras/logo 1.png" alt="Logo do chat UOL" class="logo-cadastro">
         <div class="cadastro-nome">
-            <input type="text" class="input-nome" placeholder="Digite seu nome">
-            <button class="botao-entrar" onclick=" logar()">Entrar</button>
+            <input type="text" class="input-nome" placeholder="Digite seu nome" data-identifier="enter-name">
+            <button class="botao-entrar" onclick=" logar()" data-identifier="start">Entrar</button>
         </div>
     </div>
 

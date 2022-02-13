@@ -15,8 +15,10 @@ function mensagemPodeSerEnviada(){
 }
 
 
+
 /* Chamadas */
 buscarDados();
-setInterval(carregarContatosBarraLateral,6000);
+carregarContatosBarraLateral();
+setInterval(carregarContatosBarraLateral,10000);
 setInterval(recarregarChat, 5000);
 manterLogin();

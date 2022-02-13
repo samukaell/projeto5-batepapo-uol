@@ -1,5 +1,6 @@
 let mensagens =[]
 let usuarios =[];
+let usuariosBarraLateral = [];
 let postUser = {
     name: null
 }

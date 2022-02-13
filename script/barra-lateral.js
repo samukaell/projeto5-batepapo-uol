@@ -24,7 +24,7 @@ function carregarContatosBarraLateral(){
     console.log(participantes);
     for(let i = 0; i<usuarios.length;i++){
         participantes = participantes+ `
-        <div class="participantes" onclick="selecionarParticipante(this)">
+        <div class="participantes" onclick="selecionarParticipante(this)" data-identifier="participant">
             <ion-icon name="person-circle" class="contato-barra-lateral"></ion-icon>
             <p class="nome-user">${usuarios[i].name}</p>
         </div>
